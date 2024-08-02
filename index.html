@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank balance</title>
+    <link rel="stylesheet" href="backbalance.css">
+</head>
+<body>
+    <section>
+        <div class="heading">
+            <h1>Bank Balance <br>Checker</h1>
+        </div>
+        <label for="depositAmount" class="label">Deposit Amount</label><br>
+        <input type="number" placeholder="Enter amount" name="depositAmount" class="input" id="depositAmount"><br>
+        <label for="withdrawAmount" class="label">Withdraw Amount</label><br>
+        <input type="number" placeholder="Enter amount" name="withdrawAmount" class="input" id="withdrawAmount">
+        <div class="btn">
+            <div><button class="btns" onclick="depositFunction()">Deposit</button></div>
+            <div><button class="btns balance" onclick="balanceFunction()">Balance</button></div>
+            <div><button class="btns" onclick="withdrawFunction()">Withdraw</button></div>
+        </div>
+        
+        <div class="balance-display">
+            <div>
+                <h5>Balance: </h5>
+            </div>
+            <div>
+                <h5 id="balance"></h5>
+            </div>
+        </div>
+        <div class="balanceButton">
+            <button onclick="clearBalance()" id="clearBalance">Clear Balance</button>
+        </div>
+    </section>  
+    <script src="bankbalance.js"></script>
+</body>
+</html>
+
+
